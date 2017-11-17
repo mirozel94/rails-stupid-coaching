@@ -1,12 +1,10 @@
-class CoachingControllerController < ApplicationController
-
+class QuestionsController < ApplicationController
   def answer
     @question = params[:query]
     @answer = coach_answer(@question)
   end
 
   def ask
-
   end
 
   def coach_answer(your_message)
@@ -35,7 +33,3 @@ class CoachingControllerController < ApplicationController
   end
 
 end
-
-
-
-
